@@ -6,100 +6,107 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding:2%;
+    padding:20px 30px;
+    align-items: center;
 }
 nav{
     display: flex;
-    gap:5%;
+    gap:10px;
 }
 a{
     text-decoration:none;
     color: black;
+    padding:10px;
 
 }
 .logo{
-    height:100px;
-    width:100px;
+    height:80px;
+    width:80px;
     object-fit:contain;
 }
+a:hover{
+    background-color: lightcoral;
+    color:#fff;
+}
 .contact{
-    background-color:orangered;
-    height:40%;
-    width:130%;
+    background-color:lightcoral;
+    color:#fff;
 }
 .icon{
     display:none;
 }
-@media screen and (width < 550px){
-   .icon{
-    display:inline-block;
-    color: black;
-   } 
-a{
-    display:none;
-}
-}
-@media screen and (width < 550px){
-  .container1{
-    top:50%;
-    left: 50%;
-    transform:translate(-50%,-50%) ;
-} 
-}
 .container{
-    width:100vw;
-    height:100vh;
-    border:1px solid;
     background-image:url("https://www.parents.com/thmb/GExGCp2zHxDIKxnCtx4QykPFqAs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1407570793-5f7481ec66794bdb8f67f27f1a9cf6d2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    height:100vh;
+    background-size: cover;
     position: relative;
+ }
+ .container1{
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
 }
 button{
     background-color: orangered;
     border-radius:22px;
     border: none;
-    height:15%;
     color: #fff;
-    width:190px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
 }
- .container1{
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-    text-align: center;
- }
- .container1{
-    background-color: #fff;
-    border-radius: 10%;
-    height:500px;
-    text-align: center;
-    padding:160px 0;
-    position: absolute;
-    bottom:3%;
-    right: 3%;
-    } 
+
+button:hover{
+    background-color: grey;
+}
+p{
+    margin: 10px;
+    font-size: 1.4em;
+    /* font-weight: 500; */
+}
 .free{
     text-decoration:underline orange;
 }
-p{
-/* margin:10px; */
-  font-family: "Open Sans", sans-serif;
-}
-button{
-    margin:10px;
-    cursor: pointer;
-}
-a:hover{
-    background-color: lightcoral;
-    height: fit-content;
-}
-button:hover{
-    background-color: lightcoral;
-}
-.fa-solid{
-    color: orangered;
-}
+
 .logo{
     cursor: pointer;
 }
+@media screen and (width < 550px){
+   .icon{
+    display:block;
+    font-size: 20px;
+   }
+   nav{
+    display: none;
+   }
+   .container1{
+    width: 300px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   }
+}
+
+/* #checkbox:checked+nav{
+    display:flex; */
+    /* position:absolute; */
+    /* flex-direction: column; */
+    /* top:65px;
+    left:0; */
+   /* align-items: center;
+    font-size: 1.8rem;
+    gap:20px;
+    width:100%; */
+    /* z-index: 999;
+}
+*/
+
+
